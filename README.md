@@ -11,7 +11,8 @@ index.html          Landing page
 404.html            Not-found page
 css/styles.css      All styles
 js/form.js          Expression-of-interest form
-assets/             Logo, pitch video, captions, poster, favicon images
+assets/             Logo, light logo, pitch video, captions, poster, OG image
+fonts/              Self-hosted Newsreader, Inter Tight, and Geist Mono
 favicon.ico         Browser icon, cropped from the logo mark
 .nojekyll           Lets GitHub Pages serve the repo root as-is
 ```
@@ -59,7 +60,7 @@ Keep the page neutral. UWBench is an independent, nonprofit-bound benchmark. Sec
 
 ## Going live
 
-**Proposal only. This is not done.** GitHub Pages is not enabled for this repo. There is no `CNAME` file. DNS is unchanged.
+**Partly started. Not finished.** The repo root has a `CNAME` file with `underwritingbench.com`. GitHub Pages is publishing this branch. Enforce HTTPS, and the redirects from `uwbench.com` and `uwbench.org`, are still to do. This repo does not change DNS records.
 
 When someone chooses to publish:
 

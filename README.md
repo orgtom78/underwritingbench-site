@@ -11,7 +11,7 @@ index.html          Landing page
 404.html            Not-found page
 css/styles.css      All styles
 js/form.js          Expression-of-interest form
-assets/             Logo, pitch video, poster, favicon images
+assets/             Logo, pitch video, captions, poster, favicon images
 favicon.ico         Browser icon, cropped from the logo mark
 .nojekyll           Lets GitHub Pages serve the repo root as-is
 ```

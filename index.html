@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UWBench: a neutral test for AI underwriting</title>
     <meta name="description" content="UWBench is an open, vendor-neutral benchmark for AI credit underwriting. Public alpha. No official scores yet. First public results by Q2 2027.">
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-    <!-- Absolute og:url and og:image can be set when a public host exists. No CNAME in this repo. -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <!-- Preview host only. No CNAME and no custom domain in this repo. -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://orgtom78.github.io/underwritingbench-site/">
     <meta property="og:title" content="UWBench: a neutral test for AI underwriting">
     <meta property="og:description" content="UWBench is an open, vendor-neutral benchmark for AI credit underwriting. Public alpha. No official scores yet. First public results by Q2 2027.">
-    <meta property="og:image" content="/assets/pitch-poster.jpg">
+    <meta property="og:image" content="https://orgtom78.github.io/underwritingbench-site/assets/pitch-poster.jpg">
     <meta property="og:image:alt" content="UWBench title slide with the logo and an illustrated portrait on a navy background.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="UWBench: a neutral test for AI underwriting">
     <meta name="twitter:description" content="UWBench is an open, vendor-neutral benchmark for AI credit underwriting. Public alpha. No official scores yet. First public results by Q2 2027.">
-    <meta name="twitter:image" content="/assets/pitch-poster.jpg">
+    <meta name="twitter:image" content="https://orgtom78.github.io/underwritingbench-site/assets/pitch-poster.jpg">
     <meta name="twitter:image:alt" content="UWBench title slide with the logo and an illustrated portrait on a navy background.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <div class="brand-bar" aria-hidden="true"></div>
     <header class="site-header">
-      <a class="logo" href="/">
-        <img src="/assets/uwbench-logo.png" alt="UWBench. Open benchmark for AI credit underwriting." width="980" height="250">
+      <a class="logo" href="./">
+        <img src="assets/uwbench-logo.png" alt="UWBench. Open benchmark for AI credit underwriting." width="980" height="250">
       </a>
       <nav class="nav" aria-label="Page">
         <a href="#why">Why</a>
@@ -53,11 +54,12 @@
             <a class="btn btn-secondary" href="https://calendly.com/tobias-securelend/tobias-securelend-ai">Book a call</a>
           </div>
           <figure class="video-figure">
-            <video controls preload="none" poster="/assets/pitch-poster.jpg" width="1280" height="720">
-              <source src="/assets/pitch-web.mp4" type="video/mp4">
+            <video controls preload="none" poster="assets/pitch-poster.jpg" width="1280" height="720">
+              <source src="assets/pitch-web.mp4" type="video/mp4">
+              <track kind="captions" srclang="en" label="English" src="assets/pitch-captions.vtt">
               This browser cannot play the video. The same points are written on this page.
             </video>
-            <figcaption>Draft pitch, 54 seconds. Placeholder until confirmed. This page has no captions track yet. The same points are written below.</figcaption>
+            <figcaption>Draft pitch, 54 seconds. Placeholder until confirmed. English captions are burned into the picture. The same points are written below.</figcaption>
           </figure>
         </div>
       </section>
@@ -308,6 +310,6 @@ pnpm uwbench suite --suite commercial-credit-v0.1 --agent http://127.0.0.1:9090<
         </p>
       </div>
     </footer>
-    <script src="/js/form.js" defer></script>
+    <script src="js/form.js" defer></script>
   </body>
 </html>

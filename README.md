@@ -56,3 +56,27 @@ Email is the required field. Interest must be one of: Founding member, Contribut
 ## Tone
 
 Keep the page neutral. UWBench is an independent, nonprofit-bound benchmark. SecureLend is one participant and a founding contributor, and the conflict note says so. Do not turn this into a SecureLend product page. Do not name lenders or clients. Do not imply that official scores exist. The status on the page is public alpha, with no results published yet.
+
+## Going live
+
+**Proposal only. This is not done.** GitHub Pages is not enabled for this repo. There is no `CNAME` file. DNS is unchanged.
+
+When someone chooses to publish:
+
+1. **Host on GitHub Pages.** A github.io preview can serve this branch (`cursor/uwbench-landing-e76f`) from path `/`. That URL is a GitHub host, not a custom domain. Production can later serve the default branch the same way.
+2. **Custom domain `underwritingbench.com`.** At the DNS host, set these apex records:
+
+   | Type | Value |
+   | --- | --- |
+   | A | 185.199.108.153 |
+   | A | 185.199.109.153 |
+   | A | 185.199.110.153 |
+   | A | 185.199.111.153 |
+   | AAAA | 2606:50c0:8000::153 |
+   | AAAA | 2606:50c0:8001::153 |
+   | AAAA | 2606:50c0:8002::153 |
+   | AAAA | 2606:50c0:8003::153 |
+
+   Set `www` as a CNAME to `orgtom78.github.io`. After a transfer into the UWBench organization, point that CNAME at the org’s `github.io` host instead.
+3. **Enforce HTTPS** in the GitHub Pages settings after the custom domain is saved. Add a `CNAME` file only at that step.
+4. **Redirect the short names.** Send `uwbench.com` and `uwbench.org` to `https://underwritingbench.com` with a 301. Do that at the registrar. If the registrar cannot forward, use a tiny redirect host. Those names should not serve this site themselves.

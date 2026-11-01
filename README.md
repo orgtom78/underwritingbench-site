@@ -10,7 +10,7 @@ The future home is underwritingbench.com. Do not add a `CNAME` file, and do not 
 index.html          Landing page
 404.html            Not-found page
 css/styles.css      All styles
-js/form.js          Expression-of-interest form
+js/form.js          Loads the HubSpot form when Join is near, or shows an email fallback
 assets/             Logo, light logo, pitch video, captions, poster, OG image
 fonts/              Self-hosted Newsreader, Inter Tight, and Geist Mono
 favicon.ico         Browser icon, cropped from the logo mark
@@ -33,26 +33,13 @@ Open http://127.0.0.1:8080/404.html to preview the not-found page. On GitHub Pag
 
 Paths in the HTML start at the site root (`/css/styles.css`), so use a local server. Opening the file directly in a browser will not load the styles.
 
-## Set the HubSpot form
+## HubSpot form
 
-The interest form posts JSON to HubSpot’s v3 submit API:
+The Join section loads HubSpot’s EU embed for portal `149355855`, form `6bade691-4e5f-4368-9743-d8b0b908cbbd`, region `eu1`. The script is added only when that section is near the screen.
 
-`https://api.hsforms.com/submissions/v3/integration/submit/149355855/{FORM_GUID}`
+If the script does not load, or JavaScript is off, the page shows a mailto link. The address in the page is `tobias@underwritingbench.com`. Confirm that address before relying on it.
 
-`FORM_GUID` is one constant at the top of `js/form.js`. The value in this repo is:
-
-`REPLACE_WITH_HUBSPOT_FORM_GUID`
-
-While that placeholder is in place, the form checks the email and the interest choice, then shows a success note on the page. It does **not** send the request. The browser console warns that the form is not wired yet.
-
-To turn sending on:
-
-1. Create the HubSpot form in portal `149355855`.
-2. Add a custom contact property the form can store, named `uwbench_interest`.
-3. Replace `FORM_GUID` in `js/form.js` with that form’s GUID.
-4. Submit once and confirm the contact fields: `firstname`, `lastname` (when the name has more than one word), `company`, `jobtitle`, `email`, and `uwbench_interest`. The request also sends `context.pageUri` and `context.pageName`.
-
-Email is the required field. Interest must be one of: Founding member, Contributor, Lender participant.
+Colours inside the HubSpot iframe are set in HubSpot, not in this CSS.
 
 ## Tone
 

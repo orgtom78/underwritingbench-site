@@ -376,71 +376,29 @@ h2 {
 
 .form-card h2 { margin-bottom: 1.1rem; }
 
-.field, .choices { margin: 0 0 0.9rem; }
-
-.field { display: flex; flex-direction: column; gap: 0.35rem; }
-
-.field span, .choice-legend {
-  color: var(--heading);
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-input[type="text"],
-input[type="email"] {
+.hs-form-frame {
   width: 100%;
-  min-height: 44px;
-  padding: 0.55rem 0.7rem;
-  border: 1px solid var(--field);
-  border-radius: 0;
+  min-height: 28rem;
   background: var(--bg);
+}
+
+.hs-form-frame iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: var(--bg);
+}
+
+.form-fallback {
+  margin: 0;
+  padding: 1rem;
   color: var(--text);
-  font: 1rem/1.4 var(--sans);
-}
-
-.choices { border: 0; padding: 0; }
-
-.choice {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  min-height: 44px;
-  margin-top: 0.4rem;
-  padding: 0 0.7rem;
+  background: var(--bg);
   border: 1px solid var(--field);
-  background: var(--bg);
+  font-family: var(--sans);
 }
 
-.choice input {
-  width: 1.05rem;
-  height: 1.05rem;
-  accent-color: var(--navy);
-}
-
-.field-error { margin: 0; color: var(--err); font-size: 0.95rem; }
-.field-error:not(:empty) { display: block; }
-
-input[aria-invalid="true"] { border-color: var(--err); }
-
-.form-error, .form-success {
-  margin: 0 0 1rem;
-  padding: 0.9rem 1rem;
-}
-
-.form-error {
-  color: var(--err);
-  border: 1px solid var(--err);
-  background: var(--bg);
-}
-
-.form-success {
-  color: var(--text);
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--teal);
-  background: var(--bg);
-}
+.form-fallback a { color: var(--teal-text); }
 
 .about-note p { max-width: 42rem; }
 .about-note p + p { margin-top: 0.9rem; }

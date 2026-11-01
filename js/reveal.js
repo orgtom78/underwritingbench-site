@@ -1,4 +1,15 @@
 (function () {
+  var pitch = document.getElementById("pitch");
+  if (pitch) {
+    var webp = false;
+    try {
+      webp = document.createElement("canvas").toDataURL("image/webp").indexOf("data:image/webp") === 0;
+    } catch (e) {}
+    if (!webp) pitch.poster = "assets/pitch-poster.jpg";
+  }
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduce) document.documentElement.classList.add("reveal");
   if (!document.documentElement.classList.contains("reveal")) return;
   var nodes = document.querySelectorAll("[data-reveal]");
   if (!nodes.length || !("IntersectionObserver" in window)) {

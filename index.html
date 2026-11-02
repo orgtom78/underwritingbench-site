@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UWBench: a neutral test for AI underwriting</title>
+    <meta name="description" content="UWBench is an open, neutral benchmark for AI credit underwriting. Public alpha. No official scores yet. First public results by Q2 2027.">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' https://js-eu1.hsforms.net; style-src 'self'; font-src 'self'; img-src 'self' data: https://forms-eu1.hsforms.com https://js-eu1.hsforms.net; media-src 'self'; frame-src https://js-eu1.hsforms.net; connect-src 'self' https://js-eu1.hsforms.net https://forms-eu1.hsforms.com; form-action 'self' https://forms-eu1.hsforms.com https://js-eu1.hsforms.net">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="canonical" href="https://underwritingbench.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://underwritingbench.com/">
+    <meta property="og:title" content="UWBench: a neutral test for AI underwriting">
+    <meta property="og:description" content="UWBench is an open, neutral benchmark for AI credit underwriting. Public alpha. No official scores yet. First public results by Q2 2027.">
+    <meta property="og:image" content="https://underwritingbench.com/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="UWBench. A neutral test for AI underwriting. Public alpha. No official scores yet.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UWBench: a neutral test for AI underwriting">
+    <meta name="twitter:description" content="UWBench is an open, neutral benchmark for AI credit underwriting. Public alpha. No official scores yet. First public results by Q2 2027.">
+    <meta name="twitter:image" content="https://underwritingbench.com/assets/og.png">
+    <meta name="twitter:image:alt" content="UWBench. A neutral test for AI underwriting. Public alpha. No official scores yet.">
+    <link rel="preload" href="fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/pitch-poster.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="logo" href="./">
+        <img src="assets/uwbench-logo.png" alt="UWBench. Open benchmark for AI credit underwriting." width="588" height="150">
+      </a>
+      <nav class="nav" aria-label="Page">
+        <a href="#why">Why</a>
+        <a href="#how">How</a>
+        <a href="#when">When</a>
+        <a href="#seats">Seats</a>
+      </nav>
+      <a class="btn btn-mint" href="#join">Express interest</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="wrap">
+          <p class="kicker">Open benchmark</p>
+          <h1 id="hero-title">A neutral test<br>for AI underwriting</h1>
+          <p class="sub">You are invited to join as a founding member or a founding researcher.</p>
+          <div class="actions">
+            <a class="btn btn-mint" href="#join">Express interest</a>
+            <a class="btn btn-line" href="https://calendly.com/tobias-securelend/tobias-securelend-ai">Book a call</a>
+          </div>
+          <figure class="frame">
+            <video id="pitch" controls preload="none" poster="assets/pitch-poster.webp" width="1280" height="720" aria-label="UWBench pitch video, 54 seconds, with captions">
+              <source src="assets/pitch-web.mp4" type="video/mp4">
+              <track kind="captions" srclang="en" label="English" src="assets/pitch-captions.vtt">
+              This browser cannot play the video. The same points are written on this page.
+            </video>
+            <figcaption>UWBench pitch video, 54 seconds, with captions.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="why" aria-labelledby="why-title" data-reveal>
+        <div class="wrap">
+          <h2 id="why-title">Why a neutral test</h2>
+          <div class="cards">
+            <article class="card">
+              <p class="kicker">01</p>
+              <h3>Liability</h3>
+              <p>AI underwriting is coming. So is the liability. Banks hire outside auditors for a reason. An independent party stands behind the check.</p>
+            </article>
+            <article class="card">
+              <p class="kicker">02</p>
+              <h3>No neutral test</h3>
+              <p>Every vendor grades its own homework. Today, there is no neutral test.</p>
+            </article>
+            <article class="card">
+              <p class="kicker">03</p>
+              <h3>The check</h3>
+              <p>When one goes wrong, you must show it was tested independently.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how" aria-labelledby="how-title" data-reveal>
+        <div class="wrap">
+          <h2 id="how-title">How the test runs</h2>
+          <div class="run">
+            <article class="step">
+              <p class="idx">01 Held out</p>
+              <h3>Same files</h3>
+              <p>Test cases are kept in a separate private store. They are never put in the public set.</p>
+            </article>
+            <article class="step">
+              <p class="idx">02 Same rules</p>
+              <h3>Every tool</h3>
+              <p>Same cases. Same rules. One open contract. Any tool can plug in.</p>
+            </article>
+            <article class="step">
+              <p class="idx">03 Scored</p>
+              <h3>Named result</h3>
+              <p>Each score names the model, the setup, and the lane. Scores are benchmark artifacts, not credit opinions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="when" aria-labelledby="when-title" data-reveal>
+        <div class="wrap">
+          <h2 id="when-title">To Q2 2027</h2>
+          <ol class="when">
+            <li>
+              <span class="idx">Now</span>
+              <p>Public alpha. No results published yet.</p>
+            </li>
+            <li>
+              <span class="idx">Planned</span>
+              <p>210 held-out cases, planned.</p>
+            </li>
+            <li>
+              <span class="idx">Q2 2027</span>
+              <p>First public results by Q2 2027 at the latest.</p>
+            </li>
+            <li>
+              <span class="idx">After</span>
+              <p>After that, the rules are set.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="seats" aria-labelledby="seats-title" data-reveal>
+        <div class="wrap">
+          <h2 id="seats-title">Founding seats</h2>
+          <div class="seats">
+            <div class="seat-aside">
+              <p class="seat-kicker">Still open</p>
+              <p class="seat-count">3 to 5</p>
+            </div>
+            <div class="seat-copy">
+              <ul>
+                <li>3 to 5 founding seats. Each one comes with a board seat.</li>
+                <li>Founding members are named in the research.</li>
+                <li>Founding members may see their own scores privately before publication. Those scores are locked and can't be altered.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="join" aria-labelledby="join-title" data-reveal>
+        <div class="wrap join-grid">
+          <div class="join-copy">
+            <h2 id="join-title">Join</h2>
+            <p class="lede">Tell us if you want to join as a founding member, a contributor, or a lender participant.</p>
+            <p class="lede lede-next">Or book a call. The booking page is on a SecureLend calendar.</p>
+            <p class="actions"><a class="btn btn-line" href="https://calendly.com/tobias-securelend/tobias-securelend-ai">Book a call</a></p>
+          </div>
+          <div class="form-card" id="join-form">
+            <div class="hs-form-frame" data-region="eu1" data-form-id="6bade691-4e5f-4368-9743-d8b0b908cbbd" data-portal-id="149355855" hidden></div>
+            <p id="form-fallback" class="form-fallback" hidden>The form did not load. Email <a href="mailto:tobias@underwritingbench.com">tobias@underwritingbench.com</a>.</p>
+            <noscript>
+              <p class="form-fallback">Email <a href="mailto:tobias@underwritingbench.com">tobias@underwritingbench.com</a> to join.</p>
+            </noscript>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title" data-reveal>
+        <div class="wrap about-note">
+          <h2 id="about-title">About</h2>
+          <p>SecureLend is one participant and a founding contributor, and it has a conflict.</p>
+          <p>UWBench was started by SecureLend, which builds AI underwriting tools and takes part as one participant. SecureLend holds one board seat, no veto, and recuses itself on its own scores. Answer keys are held by a neutral custodian.</p>
+          <p>SecureLend is the first reference participant, not the owner of this repository.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <p>UWBench. Open benchmark for AI credit underwriting.</p>
+        <p><a href="https://github.com/uwbench/uwbench">GitHub</a> · Apache-2.0 · <a href="https://zenodo.org/records/22035851">Paper</a></p>
+      </div>
+    </footer>
+    <script src="js/form.js" defer></script>
+    <script src="js/reveal.js" defer></script>
+  </body>
+</html>
